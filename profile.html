@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="profile-header">
+      <h1>{activeUser.name}'s profile page</h1>
+      <nav>
+        <ul>
+          <li class="selected">My Posts</li>
+          <li class="">Update profile</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="my-post">
+        <h3>{post.title}</h3>
+        <p>{post.content}</p>
+        <span>Posted on: {postedTime}</span>
+        <span>Editted on: {edittedTime}</span>
+        <div class="btns">
+          <button>
+            Edit Blog
+          </button>
+          <button>"Delete Blog</button>
+        </div>
+      </div>
+  </body>
+</html>

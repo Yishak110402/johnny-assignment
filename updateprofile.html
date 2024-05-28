@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="updateprofile.css" />
+    <title>Update Profile</title>
+  </head>
+  <body>
+    <div class="profile-header">
+      <h1>{activeUser.name}'s profile page</h1>
+      <nav>
+        <ul>
+          <li class="">My Posts</li>
+          <li class="selected">Update profile</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="update-profile">
+        <div class="profile-pic">
+            <div class="profile-uploading">
+            </div>
+          <img alt="default profile pic"/>
+          <div>
+            <label for="profile">Change profile picture</label>
+            <input type="file" id="profile" accept="image/*" />
+          </div>
+        </div>
+        <h1>Edit user profile</h1>
+      <div class="progress-msg">Updating...</div>
+          <div class="update-success-msg">Profile updated successfully</div>
+          <div class="update-error-msg">Unable to update</div>
+  
+        <div class="form">
+          <div class="name-input">
+            <label>Name</label>
+            <input
+              type="text"
+            />
+            <button>
+              Change Name
+            </button>
+          </div>
+          <div class="email-input">
+            <label>Email</label>
+            <input
+              type="text"
+            />
+            <button>
+              Verifiy New Email
+            </button>
+          </div>
+            <div class="verify-email-input">
+              <label>Verification Code</label>
+              <input type="number" />
+              <button>
+                Change Email
+              </button>
+            </div>
+          <div class="password-input old">
+            <label>Old password</label>
+            <input
+              type="text"
+            />
+          </div>
+          <div class="password-input new">
+            <label>New password</label>
+            <input
+              type="text"
+            />
+            <button>
+              Change Password
+            </button>
+          </div>
+          <div class="account-btns">
+            <button type="submit">Update profile</button>
+            <button
+              type="button"
+            >
+              Delete Account
+            </button>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
